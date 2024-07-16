@@ -225,7 +225,7 @@ a{
 /*About Banner section */
 
 .bg-about-heading{
-    background-color: rgba(242, 239, 239, 0.5);
+    background-color: rgba(60, 57, 57, 0.5);
     
 }
 .about-heading{
@@ -326,11 +326,22 @@ a{
 }
 
 
-.bg-testimonial-section {
-    background-color: #fff;
-    padding-bottom: 5rem;
-}
 
+.bg-testimonial-section{
+    background-image: url("../images/websitedemos.net-1720529100812/leaves-free-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    background-size: 400px;
+}
+.bg-testimonial-section-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(242, 239, 239, 0.5); 
+    z-index: 1; 
+}
 .testimonial-card {
     background-color: rgba(242, 239, 239, 0.5);
     position: relative;
