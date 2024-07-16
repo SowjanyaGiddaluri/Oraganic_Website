@@ -237,6 +237,7 @@ a{
 
 .about-organic-store {
     background-color: #FFFFFF;
+    padding-bottom: 5rem;
 }
 
 .organic-container {
@@ -441,7 +442,7 @@ a{
 .bg-footer-section-para{
     color: #fff;
     font-size: 16px;
-    padding: 20px;
+    
 }
 .card-footer-heading{
     color: #fff;
