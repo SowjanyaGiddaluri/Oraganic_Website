@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Products</title>
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <h1>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Assets/images/websitedemos.net-1720529100812/onlinelogomaker-071024-1149-5775.jpg" class="nav-logo-image" alt="Company Logo" />
+            </a>
+        </h1>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" id="customItem1" href="index.html">Everything<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a id="customItem2" class="nav-link" href="shop.html">Groceries</a>
+            </li>
+            <li class="nav-item">
+                <a id="customItem3" class="nav-link" href="shop.html">Jucie</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a id="customItem4" class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a id="customItem5" class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a  class="nav-link" href="myAccount.html"><i class="bi bi-person-fill" style="color:#000; font-size:20px;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--Navbar Section-->
+
+    <!--banner section-->
+    <div class="bg-banner-section">
+        <div class="bg-banner-section-overlay">
+            <div class="container">
+                <div class="row d-flex align-items-center pt-5 pb-5">
+                    <div class="col-12 col-md-6 mt-5">
+                        <img src="Assets/images/websitedemos.net-1720529100812/organic-products-hero.png"
+                            alt="Organic Products Hero" class="img-fluid" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="banner-content">
+                            <img src="Assets/images/websitedemos.net-1720529100812/logo-leaf-new.png" alt="Logo Leaf"
+                                class="img-fluid" />
+                            <p class="banner-content-para">Best Quality Products</p>
+                            <h1 class="banner-section-heading">Join The Organic Movement!</h1>
+                            <p style="font-size:16px;">Organic farming avoids synthetic chemicals such as pesticides,
+                                herbicides, and fertilizers. Instead, it relies on natural inputs
+                                like compost, manure, and biological pest control.
+                            </p>
+                            <a href="shop.html"><button class="organic-button"><i class="bi bi-cart-fill text-white"></i> SHOP NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner section-->
+
+    <!--bg-services-section-->
+    <section class="bg-services-section">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-12 col-md-3">
+                    <div class="bg-services-section-card p-3 mb-2">
+                        <div class="d-flex flex-row">
+                            <i class="fa-solid fa-truck services-icon"></i>
+                            <div class="pl-2 pt-2">
+                                <h2 class="services-section-card-heading">Free Shipping</h2>
+                                <p class="services-section-card-para">Above 15 Only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="bg-services-section-card p-3 mb-2">
+                        <div class="d-flex flex-row mb-2">
+                            <i class="bi bi-patch-check-fill services-icon"></i>
+                            <div class="pl-2 pt-2">
+                                <h2 class="services-section-card-heading">Certified Organic</h2>
+                                <p class="services-section-card-para">100% Guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="bg-services-section-card p-3 mb-2">
+                        <div class="d-flex flex-row">
+                            <i class="fa-solid fa-money-bill services-icon"></i>
+                            <div class="pl-2 pt-2">
+                                <h2 class="services-section-card-heading">Huge Savings</h2>
+                                <p class="services-section-card-para">At Lowest Price</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="bg-services-section-card p-3 mb-2">
+                        <div class="d-flex flex-row">
+                            <i class="fa-solid fa-recycle services-icon"></i>
+                            <div class="pl-2 pt-2">
+                                <h2 class="services-section-card-heading">Easy Returns</h2>
+                                <p class="services-section-card-para">No Questions Asked</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--bg services section-->
+
+    <!--Selling Products-->
+    <div class="bg-selling-products mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="bg-selling-heading">Best Selling Products</h1>
+                    <img src="Assets/images/websitedemos.net-1720529100812/logo-leaf-new.png"
+                        class="bg-selling-image" />
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/coffee-asorted.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Assorted Coffee</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 25.00</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/sanitizer.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Hand Sanitizer</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 15.00</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/red-chillies.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Hand Picked Red Chillies</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 25.00</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/edible-oil.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Natural Extract Edible Oil</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 25.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Selling Products-->
+
+    <!--fresh vegetables-->
+    <div class="bg-vegetables pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="leaf-image col-12 text-center">
+                    <img src="Assets/images/websitedemos.net-1720529100812/basil-leaf.png"/>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="bg-vegetables-card-1 mb-2">
+                        <h1 class="bg-vegetables-card-heading">Farm Fresh Fruits</h1>
+                        <p class="bg-vegetables-card-para">Farm food, often referred to as farm-to-table or
+                            farm-fresh food, emphasizes the direct relationship between
+                            food production and consumption
+                        </p>
+                        <a href="shop.html"><button class="organic-button"><i class="bi bi-cart-fill text-white"></i> SHOP NOW</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="bg-vegetables-card-2 mb-2">
+                        <h1 class="bg-vegetables-card-heading">Fresh Vegetables</h1>
+                        <p class="bg-vegetables-card-para">Farm food, often referred to as farm-to-table or
+                            farm-fresh food, emphasizes the direct relationship between
+                            food production and consumption
+                        </p>
+                        <a href="shop.html"><button class="organic-button"><i class="bi bi-cart-fill text-white"></i> SHOP NOW</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="bg-vegetables-card-3 mb-2">
+                        <h1 class="bg-vegetables-card-heading">Oragnic Legume</h1>
+                        <p class="bg-vegetables-card-para">Farm food, often referred to as farm-to-table or
+                            farm-fresh food, emphasizes the direct relationship between
+                            food production and consumption
+                        </p>
+                        <a href="shop.html"><button class="organic-button"><i class="bi bi-cart-fill text-white"></i> SHOP NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-offer mt-5 pt-5 pb-5">
+            <div class="container">
+                <div>
+                    <div class="d-flex flex-row">
+                        <h1 class="bg-offer-heading">Get 25% Off On Your First Purchase!</h1>
+                        <button class="ml-auto" style="font-size: 11px; background-color:#3f600d; padding:3px; color:#fff; border-radius:5px;"><i class="bi bi-cart-fill text-white"></i> SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="offer-last-heading">Try it For Free. No Registration Needed</h1>
+    </div>
+
+    <!--Trending Products-->
+    <div class="bg-selling-products mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="bg-selling-heading">Trending Products</h1>
+                    <img src="Assets/images/websitedemos.net-1720529100812/logo-leaf-new.png"
+                        class="bg-selling-image" />
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-2">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/coffee-asorted.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Assorted Coffee</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 25.00</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/orage-juice-kariz.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Fresh Orange Juice</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 18.00</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/sanitizer.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Hand Sanitizer</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 25.00</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="shop.html"><img src="Assets/images/websitedemos.net-1720529100812/red-chillies.jpg"
+                            class="selling-product-image" /></a>
+                        <h1 class="selling-product-heading text-center pt-2">Hand Picked Red Chillies</h1>
+                        <div class="text-center">
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                        <p class="text-center">$ 25.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Trending Products-->
+
+    <div class="bg-customer-reviews">
+        <div class="bg-customer-reviews-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5 mt-4">
+                        <h1 class="bg-selling-heading">Customers Reviews</h1>
+                        <img src="Assets/images/websitedemos.net-1720529100812/logo-leaf-new.png"
+                            class="bg-selling-image" />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="bg-customer-review-card text-center p-4 mb-2">
+                                <div class="text-center pb-3">
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                </div>
+                                <p class="customer-review-card-para">
+                                    The vegetables I bought were incredibly fresh and flavorful! I could really taste
+                                    the difference compared to what I usually get at the supermarket. Highly recommend.
+                                    Absolutely loved the fresh fruits I received. They were perfectly ripe and juicy. My
+                                    kids couldn't get enough of them!
+                                </p>
+                                <div>
+                                    <img src="Assets/images/websitedemos.net-1720529100812/client02-free-img.png" />
+                                    <span>Mole kusie</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-customer-review-bg-image text-center mb-2">
+                                <div class="bg-customer-review-bg-image-overlay p-4">
+                                    <h1 class="customer-review-bg-image-heading">Deal Of The Day 15% Off On All
+                                        Vegetables!</h1>
+                                    <p class="customer-review-bg-image-para">Iam the block. Click add button to change
+                                        that text.</p>
+                                    <a href="shop.html"><button class="mt-4 mb-3 organic-button"><i class="bi bi-cart-fill text-white"></i> SHOP NOW</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-customer-review-card text-center p-4 mb-2">
+                                <div class="text-center pb-3">
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                </div>
+                                <p class="customer-review-card-para">
+                                    The vegetables I bought were incredibly fresh and flavorful! I could really taste
+                                    the difference compared to what I usually get at the supermarket. Highly recommend.
+                                    Absolutely loved the fresh fruits I received. They were perfectly ripe and juicy. My
+                                    kids couldn't get enough of them!
+                                </p>
+                                <div>
+                                    <img src="Assets/images/websitedemos.net-1720529100812/client01-free-img.png" />
+                                    <span>Mole Serhred</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="row">
+                        <div>
+                            <img src=""/>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="bg-footer-section-para">
+                        Consuming fresh food can contribute to better overall health,
+                        as it often contains fewer additives, preservatives, and unhealthy fats.
+                        It can support weight management, improve digestion, and reduce the risk
+                        of chronic diseases.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 col-12 pl-sm-5" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading">Quick Links</h1>
+                            <ul class="list-unstyled card-footer-para">
+                                <li>About</li>
+                                <li>Cart</li>
+                                <li>Checkout</li>
+                                <li>Contact</li>
+                                <li>Home</li>
+                                <li>My Account</li>
+                                <li>Shop</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-12 pl-sm-5 pl-md-0" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading">Download Our Mobile App</h1>
+                            <p class="card-footer-para">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Donec 
+                                aliquam gravida sollicitudin. Praesent 
+                                porta enim mi, non tincidunt libero 
+                                interdum sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pl-sm-5" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading mt-3">Site Links</h1>
+                            <ul class="list-unstyled card-footer-para">
+                                <li>Privacy Policy</li>
+                                <li>Shipping Details</li>
+                                <li>Offers Coupons</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-12 pl-sm-5 pl-md-0" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading">Quick Links</h1>
+                            <ul class="list-unstyled card-footer-para">
+                                <li>Know More About Us</li>
+                                <li>Visit Store</li>
+                                <li>Let's Connect</li>
+                                <li>Locate Stores</li>
+                            </ul>
+                            <div>
+                                <img src="Assets/images/websitedemos.net-1720529100812/play-store.png" style="width:100px; height:40px;"/>
+                                <img src="Assets/images/websitedemos.net-1720529100812/app-store.png" style="width:100px; height:40px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="below-section text-right pt-md-2 mt-md-4">
+                <hr style="width:100%;height:2px;border-width:0;color:gray;background-color:gray">
+                <div>
+                    <i class="bi bi-linkedin mr-2" style="color:#fff; font-size:20px;"></i>
+                    <i class="bi bi-facebook mr-2" style="color:#fff; font-size:20px;"></i>
+                    <i class="bi bi-twitter mr-2" style="color:#fff; font-size:20px;"></i>
+                    <i class="bi bi-instagram mr-2" style="color:#fff; font-size:20px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>

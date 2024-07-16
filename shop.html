@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <h1>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Assets/images/websitedemos.net-1720529100812/onlinelogomaker-071024-1149-5775.jpg" class="nav-logo-image" alt="Company Logo" />
+            </a>
+        </h1>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" id="customItem1" href="index.html">Everything<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a id="customItem2" class="nav-link" href="#">Groceries</a>
+            </li>
+            <li class="nav-item">
+                <a id="customItem3" class="nav-link" href="#">Jucie</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a id="customItem4" class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a id="customItem5" class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a  class="nav-link" href="#"><i class="bi bi-person-fill" style="color:#000; font-size:20px;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--Navbar Section-->
+
+
+    <div class="bg-shop">
+        <div class="container d-flex">
+            <div class="box">
+                <div class="col-md-2 col-12">
+                    <div class="d-flex flex-row">
+                        <input type="text" id="product-search"   placeholder="Search Products.." />
+                        <button class="button-icon-green">></button>
+                    </div>
+                    
+                    <h1 class="bg-shop-heading-1">Filter by Price</h1>
+                    <hr class="custom-border" />
+                    <div class="ml-auto">
+                        <div class="d-flex flex-row justify-content-end">
+                            <button class="white-icon-buttons">$10</button>
+                            <button class="white-icon-buttons ml-2">$40</button>
+                        </div>
+                    </div>
+                    <p class="bg-shop-para mt-4">Groceries <span style="font-weight:600;">(11)</span></p>
+                    <p class="bg-shop-para">Juice <span style="font-weight: 600;">(1)</span></p>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/edible-oil.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="pt-2 pb-2">
+                                    <h1 class="product-card-head">Natural Extracted Edible Oil</h1>
+                                    <p style="font-weight: 600;"><span class="product-card-span">$34.00</span> $25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/coffee-asorted.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="pt-2 pb-2">
+                                    <h1 class="product-card-head">Natural Extracted Edible Oil</h1>
+                                    <p class="product-card-para-1">$25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/sanitizer.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="pt-2 pb-2">
+                                    <h1 class="product-card-head">Natural Extracted Edible Oil</h1>
+                                    <p class="product-card-para-1">$25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vertical-line"></div>
+                
+                <div class="col-md-9 col-12 flex-wrap">
+                    <div class="col-12">
+                        <p>Home/Shop</p>
+                        <h1 class="bg-shop-heading-2 mb-5">Shop</h1>
+                        <div class="d-flex flex-row justify-content-between mb-3">
+                            <p>Showing 1-9 of 12 results</p>
+                            <p style="margin-left: auto;">Default sorting></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/coffee-asorted.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Assorted Coffee</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$35.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/imresizer-1720844841878.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Cashew Butter</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;"><span class="product-card-span">$35.00</span> $25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/cookie.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Diabetic Cookies</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;"><span class="product-card-span">$35.00</span> $25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/eggs.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Juice</h3>
+                                    <h1 class="product-head">Farm Fresh Eggs</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$34.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/orage-juice-kariz.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Juice</h3>
+                                    <h1 class="product-head">Fresh Orange jucie</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$18.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/honey.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Fresh Oragnic</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$34.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/sanitizer.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Hand Sanitizer</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$15.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/red-chillies.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Handpicked Red Chillies</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$19.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/edible-oil.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Natural Extracted Edible Oil</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="bg-footer-section-para">
+                        Consuming fresh food can contribute to better overall health,
+                        as it often contains fewer additives, preservatives, and unhealthy fats.
+                        It can support weight management, improve digestion, and reduce the risk
+                        of chronic diseases.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 col-12 pl-sm-5" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading">Quick Links</h1>
+                            <ul class="list-unstyled card-footer-para">
+                                <li>About</li>
+                                <li>Cart</li>
+                                <li>Checkout</li>
+                                <li>Contact</li>
+                                <li>Home</li>
+                                <li>My Account</li>
+                                <li>Shop</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-12 pl-sm-5 pl-md-0" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading">Download Our Mobile App</h1>
+                            <p class="card-footer-para">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Donec 
+                                aliquam gravida sollicitudin. Praesent 
+                                porta enim mi, non tincidunt libero 
+                                interdum sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pl-sm-5" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading mt-3">Site Links</h1>
+                            <ul class="list-unstyled card-footer-para">
+                                <li>Privacy Policy</li>
+                                <li>Shipping Details</li>
+                                <li>Offers Coupons</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-12 pl-sm-5 pl-md-0" style="padding-left: 3rem;">
+                            <h1 class="card-footer-heading">Quick Links</h1>
+                            <ul class="list-unstyled card-footer-para">
+                                <li>Know More About Us</li>
+                                <li>Visit Store</li>
+                                <li>Let's Connect</li>
+                                <li>Locate Stores</li>
+                            </ul>
+                            <div>
+                                <img src="Assets/images/websitedemos.net-1720529100812/play-store.png" style="width:100px; height:40px;"/>
+                                <img src="Assets/images/websitedemos.net-1720529100812/app-store.png" style="width:100px; height:40px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="below-section text-right pt-md-2 mt-md-4">
+                <hr style="width:100%;height:2px;border-width:0;color:gray;background-color:gray">
+                <div>
+                    <i class="bi bi-linkedin mr-2" style="color:#fff; font-size:20px;"></i>
+                    <i class="bi bi-facebook mr-2" style="color:#fff; font-size:20px;"></i>
+                    <i class="bi bi-twitter mr-2" style="color:#fff; font-size:20px;"></i>
+                    <i class="bi bi-instagram mr-2" style="color:#fff; font-size:20px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
