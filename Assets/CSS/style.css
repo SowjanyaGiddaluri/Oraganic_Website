@@ -328,6 +328,7 @@ a{
 
 
 
+
 .bg-testimonial-section{
     background-image: url("../images/websitedemos.net-1720529100812/leaves-free-img.png");
     background-repeat: no-repeat;
@@ -463,6 +464,29 @@ a{
 .bg-myAccount{
     background-color:#fff;
 }
+.wrapper{
+    height: 40px;
+    min-width: 80px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2)
+}
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.wrapper span.nums{
+    font-size: 20px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+}
+
+
 .myAccount-image{
     width: 100%;
     height: 400px;
@@ -590,18 +614,183 @@ th, td {
     background-color: #fff;
     
 }
-
-
-
-
-.vertical-line {
-    border-left: 1px solid #000;
-    height: auto; 
-    margin: 20px; 
+.coupon-input{
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
+
+
+/* shop section */
+
+
+.filter-sidebar {
+    position: relative;
+    float: left;
+    width: 100%; /* Adjust width as needed */
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    position: relative;
+}
+::selection{
+    color: #fff;
+    background: #17a2b8;
+}
+
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 10px 0 15px;
+
+}
+
+.price-input .field {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+
+.field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #999;
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator {
+    width:50px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+.slider .progress {
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #17a2b8;
+}
+.range-input {
+    position: relative;
+}
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top:-5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #17a2b8;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #17a2b8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+  
+
+.dropdown-check-list{
+    display: inline-block;
+}
+.content-adjust{
+margin-top: 80px;
+}
+.search-input{
+    width: 60px;
+}
+.dropdown-check-list .anchor{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    background-color:#8cbc44;
+    color: #fff;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+@media (max-width: 768px) {
+    .dropdown-check-list .anchor {
+        width: 300px; 
+        padding: 10px; 
+    }
+}   
+    
+
+.dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+}
+
+.dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.dropdown-check-list ul.items li {
+    list-style: none;
+}
+
 .bg-shop{
     background-color: #fff;
 }
+
 .custom-border {
     border: 2px solid #3f600d;
 }
@@ -611,6 +800,26 @@ th, td {
     width: 50px;
     border: none;
 
+}
+.search-input{
+    height: 30px;
+    width: 30%;
+    margin-left: 35%;
+    border: 1px #333 solid;
+}
+
+.search-button{
+    background-color: #8cbc44;
+    height: 30px;
+    width: 40px;
+    border: 1px transparent solid;
+}
+.search-form{
+    box-sizing: border-box;
+    display: flex;
+}
+.search-icon{
+    color: #fff;
 }
 .white-icon-buttons{
     background-color: #fff;
@@ -652,18 +861,8 @@ th, td {
     font-size: 20px;
 }
 
+/* shop section */
 
-.box{
-    display: flex;
-    flex-direction: column;
-}
-@media (min-width: 789px){
-    .box{
-        display: flex;
-        flex-direction: row;
-    }
-    
-}
 
 .bg-contact-heading{
     background-color: rgba(60, 57, 57, 0.5);
@@ -712,6 +911,43 @@ th, td {
     color: #000;
 }
 
+.touch-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.touch-card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.touch-card label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.touch-card input, .touch-card textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.touch-card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.touch-card button:hover {
+    background-color: #0056b3;
+}
+
 .matter-cards-head{
     font-size: 20px;
     font-weight: 600;
@@ -734,3 +970,14 @@ th, td {
     color: rgb(233, 231, 231);
     border: 1px solid;
 }
+.bg-modal-card {
+    background-image: url("../images/websitedemos.net-1720529100812/family-supermarket-woman-brown-t-shirt-people-choose-vegetables-mother-with-daughter.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+

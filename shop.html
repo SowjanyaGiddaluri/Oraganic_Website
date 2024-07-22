@@ -17,16 +17,18 @@
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
         rel="stylesheet">
-     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <!--Navbar Section-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="padding:0;">
         <h1>
             <a class="navbar-brand d-flex align-items-center mr-auto" href="index.html">
                 <img src="Assets/images/websitedemos.net-1720529100812/onlinelogomaker-071024-1149-5775.jpg" class="nav-logo-image" alt="Company Logo" />
@@ -51,6 +53,9 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a id="customItem4" class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
                     <a id="customItem4" class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
@@ -62,74 +67,240 @@
             </ul>
         </div>
     </nav>
-    
     <!--Navbar Section-->
+    <div class="row">
+        <div class="col-md-3 col-12">
+            <div class="filter-sidebar">
+                <div>
+                    <div class="d-flex mb-3">
+                        <div class="col-12">
+                            <h1 class="bg-shop-heading-1">Filter by Price</h1>
+                            <div class="price-input">
+                                <div class="field">
+                                    <span>Min</span>
+                                    <input type="number" class="input-min" value="2500">
+                                </div>
+                                <div class="separator">-</div>
+                                <div class="field">
+                                    <span>Max</span>
+                                    <input type="number" class="input-max" value="7500">
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            </div>
+                        </div>
+                    </div>
 
-    <!--shop section-->
-    <div class="bg-shop">
-        <div class="container d-flex">
-            <div class="box">
-                <div class="col-md-2 col-12">
-                    <div class="d-flex flex-row">
-                        <input type="text" id="product-search"   placeholder="Search Products.." />
-                        <button class="button-icon-green">></button>
-                    </div>
+                    <div class="col-12"><h4>Shop by Category</h4></div>
                     
-                    <h1 class="bg-shop-heading-1">Filter by Price</h1>
-                    <hr class="custom-border" />
-                    <div class="ml-auto">
-                        <div class="d-flex flex-row justify-content-end">
-                            <button class="white-icon-buttons">$10</button>
-                            <button class="white-icon-buttons ml-2">$40</button>
+                    <div class="col-12">
+                        <div id="list1" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Fresh Fruits</span>
+                            <ul id="items1" class="items">
+                                <li><input type="checkbox" /> Apple</li>
+                                <li><input type="checkbox" /> Orange</li>
+                                <li><input type="checkbox" /> Grapes</li>
+                                <li><input type="checkbox" /> Berry</li>
+                                <li><input type="checkbox" /> Mango</li>
+                                <li><input type="checkbox" /> Banana</li>
+                                <li><input type="checkbox" /> Tomato</li>
+                            </ul>
                         </div>
                     </div>
-                    <p class="bg-shop-para mt-4">Groceries <span style="font-weight:600;">(11)</span></p>
-                    <p class="bg-shop-para">Juice <span style="font-weight: 600;">(1)</span></p>
+
+                    <div class="col-12">
+                        <div id="list2" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Fresh Vegetables</span>
+                            <ul id="items2" class="items">
+                                <li><input type="checkbox" /> Beans, Brinjals</li>
+                                <li><input type="checkbox" /> Cabbage</li>
+                                <li><input type="checkbox" /> Cucumber</li>
+                                <li><input type="checkbox" /> Pumpkin</li>
+                                <li><input type="checkbox" /> Leafy Vegetables</li>
+                                <li><input type="checkbox" /> Potato</li>
+                                <li><input type="checkbox" /> Root Vegetables</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="list10" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Groceries</span>
+                            <ul id="items10" class="items">
+                                <li><input type="checkbox" />Dals & Pulses</li>
+                                <li><input type="checkbox" />Dry Fruits</li>
+                                <li><input type="checkbox" />Edible Oils & Ghee</li>
+                                <li><input type="checkbox" />Masalas & Spices</li>
+                                <li><input type="checkbox" />Rice & Rice Products</li>
+                                <li><input type="checkbox" />Salt, Sugar</li>
+                                <li><input type="checkbox" />Atta, Flours</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12"><h4 class="mt-3">Refined by</h4></div>
                     
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="product">
-                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/edible-oil.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
-                                <div class="pt-2 pb-2">
-                                    <h1 class="product-card-head">Natural Extracted Edible Oil</h1>
-                                    <p style="font-weight: 600;"><span class="product-card-span">$34.00</span> $25.00</p>
-                                </div>
-                            </div>
+                    <div class="col-12">
+                        <div id="list3" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Product Rating</span>
+                            <ul id="items3" class="items">
+                                <li>
+                                    <div class="pb-3">
+                                        <input type="checkbox" />
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pb-3">
+                                        <input type="checkbox" />
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pb-3">
+                                        <input type="checkbox" />
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pb-3">
+                                        <input type="checkbox" />
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pb-3">
+                                        <input type="checkbox" />
+                                        <span class="fa-solid fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                        <span class="fa-regular fa-star customer-reviews-icon"></span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-12">
-                            <div class="product">
-                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/coffee-asorted.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
-                                <div class="pt-2 pb-2">
-                                    <h1 class="product-card-head">Natural Extracted Edible Oil</h1>
-                                    <p class="product-card-para-1">$25.00</p>
-                                </div>
-                            </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="list4" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Pack Size</span>
+                            <ul id="items4" class="items">
+                                <li><input type="checkbox" />100g</li>
+                                <li><input type="checkbox" />250g</li>
+                                <li><input type="checkbox" />500g</li>
+                                <li><input type="checkbox" />1kg</li>
+                                <li><input type="checkbox" />2kg</li>
+                                <li><input type="checkbox" />5kg</li>
+                                <li><input type="checkbox" />10kg</li>
+                            </ul>
                         </div>
-                        <div class="col-12">
-                            <div class="product">
-                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/sanitizer.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
-                                <div class="pt-2 pb-2">
-                                    <h1 class="product-card-head">Natural Extracted Edible Oil</h1>
-                                    <p class="product-card-para-1">$25.00</p>
-                                </div>
-                            </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="list5" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Offer</span>
+                            <ul id="items5" class="items">
+                                <li><input type="checkbox" />Buy More, Save More</li>
+                                <li><input type="checkbox" />Combo Offer</li>
+                                <li><input type="checkbox" />Deal of the Day</li>
+                                <li><input type="checkbox" />Summer</li>
+                                <li><input type="checkbox" />Women's Day</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="list6" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Discount</span>
+                            <ul id="items6" class="items">
+                                <li><input type="radio" />Upto 5%</li>
+                                <li><input type="radio" />5% - 10%</li>
+                                <li><input type="radio" />10% - 15%</li>
+                                <li><input type="radio" />15% - 25%</li>
+                                <li><input type="radio" />More than 25%</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="list7" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Banana Varieties</span>
+                            <ul id="items7" class="items">
+                                <li><input type="checkbox" />Green</li>
+                                <li><input type="checkbox" />Hill</li>
+                                <li><input type="checkbox" />Nendran</li>
+                                <li><input type="checkbox" />Poovan</li>
+                                <li><input type="checkbox" />Raw</li>
+                                <li><input type="checkbox" />Red</li>
+                                <li><input type="checkbox" />Yelakki</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="list8" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Product Type</span>
+                            <ul id="items8" class="items">
+                                <li><input type="checkbox" />Combo</li>
+                                <li><input type="checkbox" />Green Peas</li>
+                                <li><input type="checkbox" />Multipack</li>
+                                <li><input type="checkbox" />SuperSaver</li>
+                                <li><input type="checkbox" />Sweet Corn</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="list9" class="dropdown-check-list mt-3" tabindex="100">
+                            <span class="anchor">Seasonal</span>
+                            <ul id="items9" class="items">
+                                <li><input type="checkbox" />Pooja Items</li>
+                                <li><input type="checkbox" />Summer Fruits</li>
+                                <li><input type="checkbox" />Summer Veggies</li>
+                                <li><input type="checkbox" />Winter Fruits</li>
+                                <li><input type="checkbox" />Winter Veggies</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                
-                <div class="vertical-line"></div>
-                
-                <div class="col-md-9 col-12 flex-wrap">
+            </div>
+        </div>
+        <div class="col-md-9 col-12">
+            <div class="content">
+                <div class="col-12 flex-wrap">
                     <div class="col-12">
-                        <p>Home/Shop</p>
-                        <h1 class="bg-shop-heading-2 mb-5">Shop</h1>
-                        <div class="d-flex flex-row justify-content-between mb-3">
+                        <div class="d-flex flex-row justify-content-between content-adjust">
                             <p>Showing 1-9 of 12 results</p>
-                            <p style="margin-left: auto;">Default sorting></p>
+                            <form style="margin-left: auto;" class="d-flex">
+                                <input type="search"   class="search-input" placeholder="Search...">
+                                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                            </form>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-12">
+                        <div class="col-md-3 col-12">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/coffee-asorted.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -146,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12">
+                        <div class="col-md-3 col-12">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/imresizer-1720844841878.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -163,7 +334,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/cookie.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -180,7 +351,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/eggs.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -197,7 +368,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/orage-juice-kariz.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -214,7 +385,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/honey.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -231,7 +402,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/sanitizer.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -248,7 +419,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/red-chillies.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -265,7 +436,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="product">
                                 <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/edible-oil.jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
                                 <div class="text-center p-2">
@@ -282,19 +453,121 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/ai-generated-image-banana (2).jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Fruits</h3>
+                                    <h1 class="product-head">Fresh Bananas</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/delicious-mango-still-life (1).jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Fruits</h3>
+                                    <h1 class="product-head">Mangoes</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$30.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/high-angle-yellow-powder-bowl (1).jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Turmeric Powder</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/ginger-root (1).jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">ginger</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$40.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/raw-carrot-kitchen (1).jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Carrots</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$20.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product">
+                                <a href="myAccount.html"><img src="Assets/images/websitedemos.net-1720529100812/top-view-white-black-eggplants-stand-beige-napkin (1).jpg" style="width:100%;" alt="Natural Extracted Edible Oil" /></a>
+                                <div class="text-center p-2">
+                                    <h3 class="product-sub-head">Groceries</h3>
+                                    <h1 class="product-head">Egg Plants</h1>
+                                    <div>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                    </div>
+                                    <p style="font-weight: bold;">$30.00</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--shop section-->
+    <script src="Assets/JavaScript/shop.js"></script>
 
     <!--footer section-->
     <div class="bg-footer-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-12">
-                    <div class="bg-footer-section-para" style="padding: 2rem;">
+                    <div class="bg-footer-section-para p-3">
                         Consuming fresh food can contribute to better overall health,
                         as it often contains fewer additives, preservatives, and unhealthy fats.
                         It can support weight management, improve digestion, and reduce the risk
@@ -303,49 +576,57 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6 col-12" style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading">Quick Links</h1>
-                            <ul class="list-unstyled card-footer-para">
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="myAccount.html">My Account</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                            </ul>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading">Quick Links</h1>
+                                <ul class="list-unstyled card-footer-para">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="myAccount.html">My Account</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-12 pl-md-0" style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading">Download Our Mobile App</h1>
-                            <p class="card-footer-para">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Donec 
-                                aliquam gravida sollicitudin. Praesent 
-                                porta enim mi, non tincidunt libero 
-                                interdum sit amet.
-                            </p>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading">Download Our Mobile App</h1>
+                                <p class="card-footer-para">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Donec 
+                                    aliquam gravida sollicitudin. Praesent 
+                                    porta enim mi, non tincidunt libero 
+                                    interdum sit amet.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-12" style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading mt-3">Site Links</h1>
-                            <ul class="list-unstyled card-footer-para">
-                                <li>Privacy Policy</li>
-                                <li>Shipping Details</li>
-                                <li>Offers Coupons</li>
-                                <li>Terms & Conditions</li>
-                            </ul>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading mt-3">Site Links</h1>
+                                <ul class="list-unstyled card-footer-para">
+                                    <li>Privacy Policy</li>
+                                    <li>Shipping Details</li>
+                                    <li>Offers Coupons</li>
+                                    <li>Terms & Conditions</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-12 pl-md-0" style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading">Quick Links</h1>
-                            <ul class="list-unstyled card-footer-para">
-                                <li>Know More About Us</li>
-                                <li>Visit Store</li>
-                                <li>Let's Connect</li>
-                                <li>Locate Stores</li>
-                            </ul>
-                            <div>
-                                <img src="Assets/images/websitedemos.net-1720529100812/play-store.png" style="width:100px; height:40px;"/>
-                                <img src="Assets/images/websitedemos.net-1720529100812/app-store.png" style="width:100px; height:40px;"/>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading">Quick Links</h1>
+                                <ul class="list-unstyled card-footer-para">
+                                    <li>Know More About Us</li>
+                                    <li>Visit Store</li>
+                                    <li>Let's Connect</li>
+                                    <li>Locate Stores</li>
+                                </ul>
+                                <div>
+                                    <img src="Assets/images/websitedemos.net-1720529100812/play-store.png" style="width:100px; height:40px;"/>
+                                    <img src="Assets/images/websitedemos.net-1720529100812/app-store.png" style="width:100px; height:40px;"/>
+                                </div>
                             </div>
                         </div>
                     </div>

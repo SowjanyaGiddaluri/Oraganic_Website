@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -17,9 +18,6 @@
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
         rel="stylesheet">
-     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,6 +49,9 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="customItem4" class="nav-link" href="shop.html">Shop</a>
+                </li>
                 <li class="nav-item">
                     <a id="customItem4" class="nav-link" href="about.html">About</a>
                 </li>
@@ -111,7 +112,29 @@
                         </div>
                     </div>
                 </div>
-
+                <div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="touch-card">
+                                    <h1>Contact Us</h1>
+                                    <form>
+                                        <label for="contactName">Name</label>
+                                        <input id="contactName" name="Name" type="text" required/>
+                                        <label for="contactEmail">Email</label>
+                                        <input id="contactEmail" name="Email" type="email" required/>
+                                        <label for="contactPhone">Phone Number</label>
+                                        <input id="contactPhone" name="Phone" type="tel"/>
+                                        <label for="contactMessage">Message</label>
+                                        <textarea id="contactMessage" name="Message" required></textarea>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="p-5">
                     <div class="col-12 text-center mt-5 mb-5">
                         <h1 class="matter-contact-head">Frequently Asked Question!</h1>
@@ -121,8 +144,8 @@
                         <div class="col-md-6 col-12">
                             <div class="matter-cards p-3">
                                 <div class="d-flex flex-row">
-                                    <h1 class="matter-cards-head">pulvinar nostrud class cum facilis?</h1>
-                                    <i class="bi bi-arrow-right-circle-fill ml-auto"></i>
+                                    <h1 class="matter-cards-head">Do you have any certification for sustainability?</h1>
+                                    <p class="ml-auto" data-toggle="modal" data-target="#exampleModal1"><i class="bi bi-arrow-right-circle-fill"></i></p>
                                 </div>
                                 <hr/>
                             </div>
@@ -130,8 +153,8 @@
                         <div class="col-md-6 col-12">
                             <div class="matter-cards p-3">
                                 <div class="d-flex flex-row">
-                                    <h1 class="matter-cards-head">Pon excepturi numquam, facilis?</h1>
-                                    <i class="bi bi-arrow-right-circle-fill ml-auto"></i>
+                                    <h1 class="matter-cards-head">What payment methods do you accept?</h1>
+                                    <p class="ml-auto" data-toggle="modal" data-target="#exampleModal2"><i class="bi bi-arrow-right-circle-fill"></i></p>
                                 </div>
                                 <hr/>
                             </div>
@@ -139,8 +162,8 @@
                         <div class="col-md-6 col-12">
                             <div class="matter-cards p-3">
                                 <div class="d-flex flex-row">
-                                    <h1 class="matter-cards-head">Pon excepturi numquam, facilis?</h1>
-                                    <i class="bi bi-arrow-right-circle-fill ml-auto"></i>
+                                    <h1 class="matter-cards-head">What types of organic products do you offer?</h1>
+                                    <p class="ml-auto" data-toggle="modal" data-target="#exampleModal3"><i class="bi bi-arrow-right-circle-fill"></i></p>
                                 </div>
                                 <hr/>
                             </div>
@@ -148,8 +171,8 @@
                         <div class="col-md-6 col-12">
                             <div class="matter-cards p-3">
                                 <div class="d-flex flex-row">
-                                    <h1 class="matter-cards-head">Consequat nesciunt fusce facilisi?</h1>
-                                    <i class="bi bi-arrow-right-circle-fill ml-auto"></i>
+                                    <h1 class="matter-cards-head">Are organic products healthier than non-organic products?</h1>
+                                    <p class="ml-auto" data-toggle="modal" data-target="#exampleModal4"><i class="bi bi-arrow-right-circle-fill"></i></p>
                                 </div>
                                 <hr/>
                             </div>
@@ -157,8 +180,8 @@
                         <div class="col-md-6 col-12">
                             <div class="matter-cards p-3">
                                 <div class="d-flex flex-row">
-                                    <h1 class="matter-cards-head">Pon excepturi numquam, facilis?</h1>
-                                    <i class="bi bi-arrow-right-circle-fill ml-auto"></i>
+                                    <h1 class="matter-cards-head">How do you ensure the safety and quality of your organic products?</h1>
+                                    <p class="ml-auto" data-toggle="modal" data-target="#exampleModal5"><i class="bi bi-arrow-right-circle-fill"></i></p>
                                 </div>
                                 <hr/>
                             </div>
@@ -166,12 +189,132 @@
                         <div class="col-md-6 col-12">
                             <div class="matter-cards p-3">
                                 <div class="d-flex flex-row">
-                                    <h1 class="matter-cards-head">Consequat nesciunt fusce facilis?</h1>
-                                    <i class="bi bi-arrow-right-circle-fill ml-auto"></i>
+                                    <h1 class="matter-cards-head">Do you offer a subscription service?</h1>
+                                    <p class="ml-auto" data-toggle="modal" data-target="#exampleModal6"><i class="bi bi-arrow-right-circle-fill"></i></p>
                                 </div>
                                 <hr/>
                             </div> 
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-modal-title" style="font-size:25px;" id="exampleModalLabel">Organic Website</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg-modal-card">
+                            <p>Yes, we hold several sustainability certifications, including [certifications], which validate our commitment to environmental stewardship and ethical practices.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="contact.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-modal-title" style="font-size:25px;" id="exampleModalLabel">Organic Website</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg-modal-card">
+                            <p>We accept various payment methods, including credit cards, debit cards, PayPal, and bank transfers. For more information, please visit our payment information page [link to payment information].</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="contact.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-modal-title" style="font-size:25px;" id="exampleModalLabel">Organic Website</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg-modal-card">
+                            <p>We offer a wide range of organic products, including fruits, vegetables, grains, dairy, meat, and packaged foods. You can browse our full selection on our website [link to product page].</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="contact.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-modal-title" style="font-size:25px;" id="exampleModalLabel">Organic Website</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg-modal-card">
+                            <p>Organic products are grown without synthetic pesticides and fertilizers, which can reduce exposure to harmful chemicals. They are also often fresher and can contain higher levels of certain nutrients. However, it is important to maintain a balanced diet and consult with healthcare professionals for specific dietary advice.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="contact.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-modal-title" style="font-size:25px;" id="exampleModalLabel">Organic Website</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg-modal-card">
+                            <p>We follow strict organic certification guidelines and regularly test our products for quality and safety. Our farms and processing facilities undergo regular inspections by certifying bodies to ensure compliance with organic standards.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="contact.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title thanking-modal-title" style="font-size:25px;" id="exampleModalLabel">Organic Website</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bg-modal-card">
+                            <p>Yes, we offer a subscription service for regular deliveries of your favorite organic products. You can learn more and sign up on our subscription page [link to subscription page].</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="contact.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Contact Us</button></a>
                     </div>
                 </div>
             </div>
@@ -184,7 +327,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-12">
-                    <div class="bg-footer-section-para" style="padding: 2rem;">
+                    <div class="bg-footer-section-para p-3">
                         Consuming fresh food can contribute to better overall health,
                         as it often contains fewer additives, preservatives, and unhealthy fats.
                         It can support weight management, improve digestion, and reduce the risk
@@ -193,49 +336,57 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6 col-12" style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading">Quick Links</h1>
-                            <ul class="list-unstyled card-footer-para">
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="myAccount.html">My Account</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                            </ul>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading">Quick Links</h1>
+                                <ul class="list-unstyled card-footer-para">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="myAccount.html">My Account</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-12 pl-md-0" style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading">Download Our Mobile App</h1>
-                            <p class="card-footer-para">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Donec 
-                                aliquam gravida sollicitudin. Praesent 
-                                porta enim mi, non tincidunt libero 
-                                interdum sit amet.
-                            </p>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading">Download Our Mobile App</h1>
+                                <p class="card-footer-para">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Donec 
+                                    aliquam gravida sollicitudin. Praesent 
+                                    porta enim mi, non tincidunt libero 
+                                    interdum sit amet.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-12 " style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading mt-3">Site Links</h1>
-                            <ul class="list-unstyled card-footer-para">
-                                <li>Privacy Policy</li>
-                                <li>Shipping Details</li>
-                                <li>Offers Coupons</li>
-                                <li>Terms & Conditions</li>
-                            </ul>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading mt-3">Site Links</h1>
+                                <ul class="list-unstyled card-footer-para">
+                                    <li>Privacy Policy</li>
+                                    <li>Shipping Details</li>
+                                    <li>Offers Coupons</li>
+                                    <li>Terms & Conditions</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-12 pl-md-0" style="padding-left: 3rem;">
-                            <h1 class="card-footer-heading">Quick Links</h1>
-                            <ul class="list-unstyled card-footer-para">
-                                <li>Know More About Us</li>
-                                <li>Visit Store</li>
-                                <li>Let's Connect</li>
-                                <li>Locate Stores</li>
-                            </ul>
-                            <div>
-                                <img src="Assets/images/websitedemos.net-1720529100812/play-store.png" style="width:100px; height:40px;"/>
-                                <img src="Assets/images/websitedemos.net-1720529100812/app-store.png" style="width:100px; height:40px;"/>
+                        <div class="col-md-6 col-12">
+                            <div class="pl-sm-3">
+                                <h1 class="card-footer-heading">Quick Links</h1>
+                                <ul class="list-unstyled card-footer-para">
+                                    <li>Know More About Us</li>
+                                    <li>Visit Store</li>
+                                    <li>Let's Connect</li>
+                                    <li>Locate Stores</li>
+                                </ul>
+                                <div>
+                                    <img src="Assets/images/websitedemos.net-1720529100812/play-store.png" style="width:100px; height:40px;"/>
+                                    <img src="Assets/images/websitedemos.net-1720529100812/app-store.png" style="width:100px; height:40px;"/>
+                                </div>
                             </div>
                         </div>
                     </div>
