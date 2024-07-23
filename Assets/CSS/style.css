@@ -463,6 +463,7 @@ a{
 
 .bg-myAccount{
     background-color:#fff;
+    padding-top: 60px;
 }
 .wrapper{
     height: 40px;
@@ -586,7 +587,7 @@ th, td {
     border-radius: 8px;
 }
 .bg-checkout-box{
-    
+    padding-top: 60px;
     margin-bottom: 200px;
 }
 
@@ -949,6 +950,7 @@ margin-top: 80px;
 
 .bg-second-checkout{
     background-color: #fff;
+    padding-top: 60px;
 }
 .bg-second-checkout-heading{
     font-size: 35px;
@@ -1027,4 +1029,8 @@ margin-top: 80px;
 }
 .matter-contact-head{
     font-size: 30px;
+}
+.submit-button{
+    height: 100px;
+    width: 60px;
 }
