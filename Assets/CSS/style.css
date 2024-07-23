@@ -905,17 +905,12 @@ margin-top: 80px;
     position:relative;
     top: -40px;
 }
-.matter-contact-head{
-    font-size: 35px;
-    font-weight: bold;
-    color: #000;
-}
+
 
 .touch-card {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    max-width: 500px;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -948,10 +943,7 @@ margin-top: 80px;
     background-color: #0056b3;
 }
 
-.matter-cards-head{
-    font-size: 20px;
-    font-weight: 600;
-}
+
 
 
 
@@ -970,14 +962,69 @@ margin-top: 80px;
     color: rgb(233, 231, 231);
     border: 1px solid;
 }
-.bg-modal-card {
-    background-image: url("../images/websitedemos.net-1720529100812/family-supermarket-woman-brown-t-shirt-people-choose-vegetables-mother-with-daughter.jpg");
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    padding: 20px;
+
+.accordion-group {
+	margin: 1rem 0;
 }
 
+.accordion {
+	background-color: #8cbc44;
+	border-radius: 1rem;
+	box-shadow: 0 5px 5px -5px #99c558;
+}
 
+.accordion + .accordion {
+	margin-top: 1rem;
+}
+.ac-state {
+	display: none;
+}
+
+.ac-trigger {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 1rem;
+}
+.ac-trigger:hover,
+.ac-trigger:focus {
+	background-color: #8db551;
+}
+
+.ac-title {
+	font-weight: 600;
+    color: #fff;
+}
+
+.ac-content {
+	display: grid;
+    color: #fff;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 300ms ease;
+}
+
+.ac-content-inner {
+	overflow: hidden;
+	padding: 0 1rem;
+}
+.ac-state:not(:checked) ~ .ac-trigger .ac-icon-close {
+	display: none;
+}
+
+.ac-state:checked ~ .ac-trigger {
+	background-color: #8db551;
+	box-shadow: 0 5px 5px -5px #8db551;
+}
+
+.ac-state:checked ~ .ac-trigger .ac-icon-open {
+	display: none;
+}
+
+.ac-state:checked ~ .ac-content {
+	grid-template-rows: 1fr;
+}
+.matter-contact-head{
+    font-size: 30px;
+}

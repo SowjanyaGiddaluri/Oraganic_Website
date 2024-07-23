@@ -87,14 +87,14 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <!--<td class="d-flex align-items-center">
-                                        <i class="fa-regular fa-circle-xmark"></i>
-                                        <img src="Assets/images/websitedemos.net-1720529100812/coffee-asorted.jpg" class="img-fluid ms-2" style="width:40px; height:30px;" />
-                                    </td>-->
                                     <td>Assorted Coffee</td>
                                     <td>$35.00</td>
-                                    <td>1</td>
-                                    <td>$35.00</td>
+                                    <td><div class="wrapper" style="width: 40px;">
+                                        <span id="minus" onclick="minus()">-</span>
+                                        <span id="num" class="nums">1</span>
+                                        <span id="plus" onclick="plus()">+</span>
+                                    </div></td>
+                                    <td><p id="subTotal">$35.00</p></td>
                                 </tr>
                             </tbody>
                             <tfoot>
@@ -107,7 +107,7 @@
                                                 </div>
                                                 <button class="organic-button mb-2">Apply Coupon</button>
                                             </div>
-                                            <button class="btn btn-secondary mb-2" style="font-size:14px;">UPDATE CART</button>
+                                            <button class="btn btn-secondary mb-2" style="font-size:14px;" id="updateCart" onclick="updateCart()">UPDATE CART</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -118,7 +118,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="Assets/JavaScript/cart.js"></script>
                 
     <div class="container">
         <div class="d-flex flex-row justify-content-end">
@@ -133,11 +133,11 @@
                         <tbody>
                             <tr>
                                 <td>Subtotal</td>
-                                <td>$35.00</td>
+                                <td><p id="subTotalCart">$35.00</p></td>
                             </tr>
                             <tr>
                                 <td>Total</td>
-                                <td>$35.00</td>
+                                <td><p id="totalCart">$35.00</p></td>
                             </tr>
                         </tbody>
                         <tfoot>
